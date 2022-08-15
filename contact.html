@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="icon" type="image/x-icon" href="assets/images/Logo.png">
+        <link rel="stylesheet" href="assets/styling/contact.css">
+    </head>
+    
+    <body>
+        <nav>
+            <div class="nav-left">
+                <img src="assets/images/Logo.png" alt="logo">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="blog-page.html">My Project</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nav-right">
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </nav>
+
+        <form>
+            <h1>Contact Form</h1>
+            <div>
+                <label for="input-name">Name</label>
+                <input id="input-name" type="text" required placeholder="Input your name">
+            </div>
+            
+            <div>
+                <label for="input-email">Email</label>
+                <input id="input-email" type="email" required placeholder="Input your email">
+            </div>
+
+            <div>
+                <label for="input-phone">Phone Number</label>
+                <input id="input-phone" type="number" required placeholder="Input your number phone">
+            </div>
+            
+            <div>
+                <label for="input-subject">Subject</label>
+                <select id="input-subject">
+                    <option value="">-- select --</option>
+                    <option value="Frontend">Frontend</option>
+                    <option value="Backend">Backend</option>
+                    <option value="Fullstack">Fullstack</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="input-message">Your Message</label>
+                <textarea id="input-message"></textarea>
+            </div>
+
+            <button type="button" onclick="getData()">Submit</button>
+        </form>
+    </body>
+
+    <script src="assets/js/mailing.js"></script>
+</html>
